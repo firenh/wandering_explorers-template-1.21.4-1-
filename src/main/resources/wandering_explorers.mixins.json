@@ -1,0 +1,12 @@
+{
+	"required": true,
+	"package": "firenh.wanderingexplorers.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"MerchantEntityAccessor",
+		"WanderingTraderEntityMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "wandering_explorers",
+	"version": "${version}",
+	"name": "wandering_explorers",
+	"description": "wandering traders trade biome explorer maps",
+	"authors": [
+		"firen"
+	],
+	"contact": {
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/wandering_explorers/icon.png",
+	"environment": "server",
+	"entrypoints": {
+		"main": [
+			"firenh.wanderingexplorers.WanderingExplorers"
+		],
+		"fabric-datagen": [
+			"firenh.wanderingexplorers.WanderingExplorersDataGenerator"
+		]
+	},
+	"mixins": [
+		"wandering_explorers.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
